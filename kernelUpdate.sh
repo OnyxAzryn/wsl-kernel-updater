@@ -7,7 +7,7 @@
 
 # Get newest version identifier
 # PACKAGE_DIR is a folder that stores the version information and the kerenl image
-PACKAGE_DIR=/mnt/c/Users/<Username>/Linux
+PACKAGE_DIR=<Provide your path here>
 NEWEST_VERSION=$(curl --silent "https://github.com/nathanchance/WSL2-Linux-Kernel/releases/latest" | sed "s#.*tag/\(.*\)\".*#\1#")
 CURRENT_VERSION=$(cat $PACKAGE_DIR/version)
 # Check if new version should be downloaded
