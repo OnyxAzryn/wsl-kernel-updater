@@ -2,6 +2,7 @@
 ##########################################
 # WSL Kernel Updater Script by OnyxAzryn #
 #    Kernel provided by nathanchance     #
+#	Last Updated: 08/19/2020	 #
 ##########################################
 # Kernel Source: https://github.com/nathanchance/WSL2-Linux-Kernel
 
