@@ -1,4 +1,4 @@
-# wsl-kernel-updater
+# WSL Kernel Updater
 This shell script will update a WSL Instance to use the latest kernel release provided from https://github.com/nathanchance/WSL2-Linux-Kernel.
 
 In order to use this script, you must do the following:
