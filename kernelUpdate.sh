@@ -19,8 +19,11 @@ then
 	curl -L -o ~/bzImage "https://github.com/nathanchance/WSL2-Linux-Kernel/releases/download/$NEWEST_VERSION/bzImage"
 	mv ~/bzImage $PACKAGE_DIR/bzImage
 	# Update env
+	touch $PACKAGE_DIR/version
 	rm $PACKAGE_DIR/version
 	echo "$NEWEST_VERSION" >> $PACKAGE_DIR/version
+	printf "\nThe newest version of the WSL kernel has now been installed!"
+	printf "\nTo load the new kernel, execute \"wsl.exe --shutdown\" within Windows to terminate the WSL VM. Afterwards, restart your distro.\n"
 else
 	printf "Kernel is already at latest version ($CURRENT_VERSION)!\n"
 fi
